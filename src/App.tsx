@@ -273,8 +273,8 @@ function App() {
           </div>
           <div className="contact-details">
             <a href={`mailto:${email}`}><Mail size={17}/><span>{email}</span><ExternalLink size={13}/></a>
-            <a href={`tel:${phone1.replaceAll("-", "")}`}><Phone size={17}/><span>{phone1}</span></a>
-            <a href={`tel:${phone2.replaceAll("-", "")}`}><Phone size={17}/><span>{phone2}</span></a>
+            <a href={`tel:${phone1.replace(/-/g, "")}`}><Phone size={17}/><span>{phone1}</span></a>
+            <a href={`tel:${phone2.replace(/-/g, "")}`}><Phone size={17}/><span>{phone2}</span></a>
             <div><MapPin size={17}/><span>Ukhiya, Cox’s Bazar, Bangladesh</span></div>
           </div>
         </section>
